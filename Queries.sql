@@ -1,0 +1,12 @@
+﻿-- select Nome, Ano from Filmes
+-- select Nome, Ano from Filmes order by Ano
+-- select Nome, Ano, Duracao from Filmes where Nome = 'De Volta para o Futuro'
+-- select Nome, Ano, Duracao from Filmes where Ano = 1997
+-- select Nome, Ano, Duracao from Filmes where Ano > 2000
+-- select Nome, Ano, Duracao from Filmes where Duracao > 100 AND Duracao < 150 order by Duracao
+-- select Ano, Count(*) as Quantidade from Filmes group by Ano order by Quantidade desc
+-- select Id, PrimeiroNome, UltimoNome, Genero from Atores where Genero = 'M'
+-- select Id, PrimeiroNome, UltimoNome, Genero from Atores where Genero = 'F' order by PrimeiroNome
+-- select Nome, Genero from Filmes inner join FilmesGenero on FilmesGenero.IdFilme = Filmes.Id inner join Generos on Generos.Id = FilmesGenero.IdGenero
+-- select Nome, Genero from Filmes inner join FilmesGenero on FilmesGenero.IdFilme = Filmes.Id inner join Generos on Generos.Id = FilmesGenero.IdGenero where Genero = 'Mistério'
+-- select Nome, PrimeiroNome, UltimoNome, Papel from Filmes inner join ElencoFilme on ElencoFilme.IdFilme = Filmes.Id inner join Atores on Atores.Id = ElencoFilme.IdAtor
